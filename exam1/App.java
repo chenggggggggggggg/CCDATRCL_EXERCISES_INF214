@@ -4,114 +4,120 @@ import java.util.LinkedList;
 public class App {
     public static void main(String[] args) throws Exception {
 
-// Array
+        // ARRAYS
+        // ======================================================
+        // 1. Create an array of characters of your Subject.
+        char[] Subject = { 'P', 'A', 'L', 'L', 'E', 'R' };
 
-        String names;
-        System.out.println("My Surname");
+        // 2. Print each character of your Subject on each line.
+        for (int i = 0; i < Subject.length; i++) {
+            System.out.println(Subject[i]);
+        }
 
+        // 3. Print the first character of your Subject.
+        System.out.println("The First Character of my Subject is " + Subject[0]);
 
-        String[] surname = { "PALLER"};
-        String[] character = {"P", "A", "L", "L", "E", "R"};
-        String[] first = {"P"};
-        String[] last = {"R"};
-        String[] reversed = {"RELLAP"}
+        // 4. Print the last character of your Subject.
+        System.out.println("The Last Character of my Subject is " +Subject[5]);
 
-        System.out.println("Surname");
-        System.out.println(surname[0]);
+        // 5. Print the character of your Subject in reverse order.
+        for (int i = Subject.length - 1; i >= 0; i--) {
+            System.out.println(Subject[i]);
+        }
 
-        System.out.println("These are the each character of my surname");
-        System.out.println(character [0]);
-        System.out.println(character [1]);
-        System.out.println(character [2]);
-        System.out.println(character [3]);
-        System.out.println(character [4]);
-        System.out.println(character [5]);
+        // Linked List
+        // ======================================================
+        // 1. Create a Linked list of the last six numbers of your STUDENT NUMBER.
 
-        System.out.println("The first character of my surname");
-        System.out.println(first [0]);
+        LinkedList<String> StudentNumber = new LinkedList<>();
 
-        System.out.println("The last character of my surname");
-        System.out.println(last [0]);
+        StudentNumber.add("1");
+        StudentNumber.add("0");
+        StudentNumber.add("6");
+        StudentNumber.add("3");
+        StudentNumber.add("6");
+        StudentNumber.add("8");
 
-        System.out.println("The reveresed character of my surname");
-        System.out.println(reversed [0]);
+        System.out.println(StudentNumber);
 
-//Linked List
+        // 2. Add an asterisk (*) to the head/front of the Linked list.
 
+        StudentNumber.addFirst("*");
 
-        LinkedList<Integer> numbers = new LinkedList<String>();
-        numbers.add("1");
-        numbers.add("0");
-        numbers.add("6");
-        numbers.add("3");
-        numbers.add("6");
-        numbers.add("8");
+        System.out.println(StudentNumber);
+        
+        // 3. Add an asterisk (*) to the tail/end of the Linked list.
+        StudentNumber.addLast("*");
 
-        numbers.addFirst("*");
+        //Print the Linked list.
+        System.out.println(StudentNumber);
 
-        numbers.addLast("*");
+        // 4. Display the last character of the Linked list
+        System.out.println(StudentNumber.get(7));
 
-        System.out.println(numbers);
+        // 5. Replace the last character of the Linked list with "!";
+        StudentNumber.set(7, "!");
 
-        System.out.println(numbers.get(5));
+        // 6. Remove the first character of the Linked list
+        StudentNumber.remove(0);
 
-        numbers.set(5, "!");
+        // // 7. Display the LinkedList
+        System.out.println(StudentNumber);
 
-        Integer removed_element = numbers.remove(0)
+        // Stack
+        // ======================================================
+        // 1. Create a Stack of characters of your Subject.
 
-        System.out.println("Updated LinkedList: " + numbers);
+        Stack<String> Subject = new Stack<>();
 
-//Stack
+        Surname.push("P");
+        Surname.push("A");
+        Surname.push("L");
+        Surname.push("L");
+        Surname.push("E");
+        Surname.push("R");
 
-        Stack<String> surname_stack = new Stack<>();
-        Stack<String> section_stack = new Stack<>();
-        Stack<String> subject_stack = new Stack<>();
+        // 2. Print the Stack
+        System.out.println(Surname);
 
-        surname.push("P");
-        surname.push("A");
-        surname.push("L");
-        surname.push("L");
-        surname.push("E");
-        surname.push("R");
+        // 3. Add a "INF214" to the stack.
 
-        System.out.println(surname);
+        Section.push("I");
+        Section.push("N");
+        Section.push("F");
+        Section.push("2");
+        Section.push("1");
+        Sectiom.push("4");
 
-        section.push("I");
-        section.push("N");
-        section.push("F");
-        section.push("2");
-        section.push("1");
-        section.push("4");
+        // 4. Print the Stack
+        System.out.println(Section);
 
-        System.out.println(section);
+        // 5. Remove "INF214" and Add "CCDATRCL-INF214".
+        Subject.pop();
+        Subject.pop();
+        Subject.pop();
+        Subject.pop();
+        Subject.pop();
 
-        section.pop();
-        section.pop();
-        section.pop();
-        section.pop();
-        section.pop();
-        section.pop();
-        section.pop();
+        Subject.push("C");
+        Subject.push("C");
+        Subject.push("D");
+        Subject.push("A");
+        Subject.push("T");
+        Subject.push("R");
+        Subject.push("C");
+        Subject.push("L");
+        Subject.push("-");
+        Subject.push("I");
+        Subject.push("N");
+        Subject.push("F");
+        Subject.push("2");
+        Subject.push("1");
+        Subject.push("4");
+        
 
-        subject.push("C");
-        subject.push("C");
-        subject.push("D");
-        subject.push("A");
-        subject.push("T");
-        subject.push("R");
-        subject.push("C");
-        subject.push("L");
-        subject.push("-");
-        subject.push("I");
-        subject.push("N");
-        subject.push("F");
-        subject.push("2");
-        subject.push("1");
-        subject.push("4");
-    
-        System.out.println(subject);
-
-
+        // 6. Print the Stack
+        System.out.println(Subject);
     }
 }
 
